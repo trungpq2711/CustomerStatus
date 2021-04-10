@@ -120,7 +120,7 @@ class Save implements CsrfAwareActionInterface, HttpPostActionInterface, Account
                 $customer = $this->_customerRepository->getById($customerId);
                 $customer->setCustomAttribute('customer_status', $customerStatus);
                 $this->_customerRepository->save($customer);
-                $this->messageManager->addSuccessMessage(__('Update save customer success'));
+                $this->messageManager->addSuccessMessage(__('Update status customer success'));
             } catch (InputException $e) {
                 $this->messageManager->addErrorMessage($e->getTraceAsString());
             } catch (InputMismatchException $e) {

@@ -4,13 +4,18 @@
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .form-customer-status {
-        .fieldset, .actions-toolbar {
+        .fieldset {
             &:extend(.abs-blocks-2columns all);
 
             .fieldset {
                 margin-bottom: @indent__base;
                 width: 100%;
             }
+        }
+
+        .actions-toolbar {
+            float: left;
+            clear: both;
         }
     }
 }
