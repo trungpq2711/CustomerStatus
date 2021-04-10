@@ -13,7 +13,7 @@ use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\View\Result\Page;
 use Magento\Framework\View\Result\PageFactory;
 
-class Index implements ActionInterface, AccountInterface
+class Index implements AccountInterface
 {
     /**
      * @var PageFactory
