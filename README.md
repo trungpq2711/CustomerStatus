@@ -1,5 +1,5 @@
 # extensions-customer-status
-    This module use allow customer update status show on Frontend 
+    This module has the function to allow the customer to modify the status from the frontend side 
 
 ## Installation
     Go to root folder and run command
