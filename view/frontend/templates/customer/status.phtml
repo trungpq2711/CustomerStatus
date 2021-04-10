@@ -1,0 +1,29 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var Extensions\CustomerStatus\Block\Customer\Status $block */
+?>
+<form class="form form-customer-status"
+      action="<?= $block->escapeUrl($block->getUrl('*/*/save')) ?>"
+      method="post"
+      id="form-validate"
+      data-mage-init='{"validation":{}}'>
+    <fieldset class="fieldset">
+        <div class="field customer_status">
+            <label for="customer_status" class="label"><span><?= $block->escapeHtml(__('Status')) ?></span></label>
+            <div class="control">
+                <input type="text" name="customer_status"
+                       alt="customer_status" id="customer_status" class="input-text"
+                       value="<?= $block->getCustomerStatus() ?>">
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary"><span><?= $block->escapeHtml(__('Save')) ?></span></button>
+        </div>
+    </div>
+</form>

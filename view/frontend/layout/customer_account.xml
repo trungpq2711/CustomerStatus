@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="customer_account_navigation">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" ifconfig="customer/account_information/customer_status" name="customer-account-navigation-customer-status" after="-" >
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Status</argument>
+                    <argument name="path" xsi:type="string">customerstatus/index/index</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

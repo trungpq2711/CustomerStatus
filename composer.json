@@ -1,0 +1,21 @@
+{
+    "name": "extensions/customer-status",
+    "version": "1.0.0",
+    "description": "Custom Customer Status",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*",
+        "magento/module-customer": "103.0.*"
+    },
+    "license": [
+        "Proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Extensions\\CustomerStatus\\": ""
+        }
+    }
+}
